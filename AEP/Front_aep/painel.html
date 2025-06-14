@@ -10,185 +10,64 @@
 <body>
     <div class="decoration circle"></div>
     <div class="decoration square"></div>
-    
+
     <div class="container">
         <div class="header">
             <h1>AVENIDA CERRO AZUL / ZONA 02</h1>
         </div>
-        
+
         <div class="content">
-            <!-- Tela Inicial (Linhas) -->
+            <!-- Tela Inicial -->
             <div id="home-screen" class="screen active">
                 <div class="line-title">Selecione a Linha</div>
-                
                 <div class="buttons-container">
-                    <button class="line-button blue" onclick="showScreen('blue-line')">
-                        <i class="fas fa-bus"></i> LINHA AZUL
-                    </button>
-                    <button class="line-button yellow" onclick="showScreen('yellow-line')">
-                        <i class="fas fa-bus"></i> LINHA AMARELA
-                    </button>
-                    <button class="line-button red" onclick="showScreen('red-line')">
-                        <i class="fas fa-bus"></i> LINHA VERMELHA
-                    </button>
+                    <!-- Botões gerados dinamicamente -->
+                </div>
+                <div class="image-container">
+                    <img src="imagens/todas_as_linhas.jpg" alt="mapa linhas">
                 </div>
             </div>
-            
-            <!-- Tela Linha Azul -->
+
+            <!-- Tela da Linha Azul -->
             <div id="blue-line" class="screen">
                 <div class="line-title blue">LINHA AZUL</div>
-                
-                <div class="schedule-container">
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> CENTRO - B12
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time blue">05:00</div>
-                            <div class="time blue">09:30</div>
-                            <div class="time blue">12:00</div>
-                            <div class="time blue">17:00</div>
-                            <div class="time blue">21:00</div>
-                        </div>
-                    </div>
-                    
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> JARDIM - B15
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time blue">06:00</div>
-                            <div class="time blue">10:00</div>
-                            <div class="time blue">13:00</div>
-                            <div class="time blue">18:00</div>
-                            <div class="time blue">22:00</div>
-                        </div>
-                    </div>
-                    
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> UNIVERSIDADE - B08
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time blue">07:15</div>
-                            <div class="time blue">11:45</div>
-                            <div class="time blue">14:30</div>
-                            <div class="time blue">19:15</div>
-                        </div>
-                    </div>
+                <div class="schedule-container"></div>
+                <div class="image-container">
+                    <img src="imagens/linha_azul.jpg" alt="mapa linha azul">
                 </div>
             </div>
-            
-            <!-- Tela Linha Amarela -->
+
+            <!-- Tela da Linha Amarela -->
             <div id="yellow-line" class="screen">
                 <div class="line-title yellow">LINHA AMARELA</div>
-                
-                <div class="schedule-container">
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> PRAIA - C20
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time yellow">04:30</div>
-                            <div class="time yellow">08:15</div>
-                            <div class="time yellow">11:30</div>
-                            <div class="time yellow">16:30</div>
-                            <div class="time yellow">20:30</div>
-                        </div>
-                    </div>
-                    
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> MONTANHA - C25
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time yellow">05:30</div>
-                            <div class="time yellow">09:45</div>
-                            <div class="time yellow">12:30</div>
-                            <div class="time yellow">17:30</div>
-                            <div class="time yellow">21:30</div>
-                        </div>
-                    </div>
-                    
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> SHOPPING - C18
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time yellow">07:00</div>
-                            <div class="time yellow">10:30</div>
-                            <div class="time yellow">15:15</div>
-                            <div class="time yellow">18:45</div>
-                        </div>
-                    </div>
+                <div class="schedule-container"></div>
+                <div class="image-container">
+                    <img src="imagens/linha_amarela.jpg" alt="mapa linha amarela">
                 </div>
             </div>
-            
-            <!-- Tela Linha Vermelha -->
+
+            <!-- Tela da Linha Vermelha -->
             <div id="red-line" class="screen">
                 <div class="line-title red">LINHA VERMELHA</div>
-                
-                <div class="schedule-container">
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> ONRUS - A47
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time red">01:30</div>
-                            <div class="time red">08:45</div>
-                            <div class="time red">15:30</div>
-                            <div class="time red">19:00</div>
-                            <div class="time red">22:00</div>
-                        </div>
-                    </div>
-                    
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> ONRUS - A40
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time red">02:00</div>
-                            <div class="time red">09:30</div>
-                            <div class="time red">14:00</div>
-                            <div class="time red">20:00</div>
-                            <div class="time red">23:00</div>
-                        </div>
-                    </div>
-                    
-                    <div class="route">
-                        <div class="route-name">
-                            <i class="fas fa-map-marker-alt"></i> ESTAÇÃO - A35
-                        </div>
-                        <div class="schedule">HORÁRIO</div>
-                        <div class="times">
-                            <div class="time red">03:15</div>
-                            <div class="time red">10:45</div>
-                            <div class="time red">16:30</div>
-                            <div class="time red">21:15</div>
-                        </div>
-                    </div>
+                <div class="schedule-container"></div>
+                <div class="image-container">
+                    <img src="imagens/linha_vermelha.jpg" alt="mapa linha vermelha">
                 </div>
             </div>
         </div>
-        
+
         <div class="footer">
-            <button id="back-button" class="back-button hidden" onclick="showScreen('home-screen')">
+            <button id="back-button" class="back-button hidden">
                 <i class="fas fa-arrow-left"></i> VOLTAR
             </button>
             <div class="datetime">
-                <div class="date" id="date">DATA: 10/06/2025</div>
-                <div class="time" id="time">HORÁRIO 19:58</div>
+                <div class="date" id="date">DATA:</div>
+                <div class="time" id="time">HORÁRIO:</div>
             </div>
         </div>
     </div>
+
     <script src="painel.js"></script>
+    <script src="simulador.js"></script>
 </body>
 </html>

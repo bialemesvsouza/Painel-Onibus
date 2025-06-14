@@ -379,3 +379,24 @@
             left: -100px;
             transform: rotate(45deg);
         }
+
+        .image-container {
+            width: 100%;
+            max-width: 750px;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(79, 195, 247, 0.5);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.02);
+        }
